@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Simple and media spoilers</title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="css/style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<!-- accordion -->
+			<div data-spoilers data-one-spoiler class="block block_1">
+				<div class="block__item">
+					<button tabindex="-1" type="button" data-spoiler class="block__title">
+						Simple spoiler #1
+					</button>
+
+					<div class="block__text">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse harum
+						eum, blanditiis voluptatem iure similique corrupti ratione minima
+						provident aspernatur iusto culpa aperiam mollitia saepe possimus
+						aliquid ducimus sed temporibus!
+					</div>
+				</div>
+
+				<div class="block__item">
+					<button
+						tabindex="-1"
+						type="button"
+						data-spoiler
+						class="block__title _active"
+					>
+						Simple spoiler #2
+					</button>
+					<div class="block__text">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse harum
+						eum, blanditiis voluptatem iure similique corrupti ratione minima
+						provident aspernatur iusto culpa aperiam mollitia saepe possimus
+						aliquid ducimus sed temporibus!
+					</div>
+				</div>
+
+				<div class="block__item">
+					<button tabindex="-1" type="button" data-spoiler class="block__title">
+						Simple spoiler #3
+					</button>
+					<div class="block__text">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse harum
+						eum, blanditiis voluptatem iure similique corrupti ratione minima
+						provident aspernatur iusto culpa aperiam mollitia saepe possimus
+						aliquid ducimus sed temporibus!
+					</div>
+				</div>
+			</div>
+
+			<div data-spoilers="650,min" class="block block_2">
+				<div class="block__item">
+					<button tabindex="-1" type="button" data-spoiler class="block__title">
+						This spoiler works on screen width >= 650px
+					</button>
+					<div class="block__text">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse harum
+						eum, blanditiis voluptatem iure similique corrupti ratione minima
+						provident aspernatur iusto culpa aperiam mollitia saepe possimus
+						aliquid ducimus sed temporibus!
+					</div>
+				</div>
+			</div>
+
+			<div data-spoilers="800,max" class="block block_3">
+				<div class="block__item">
+					<button tabindex="-1" type="button" data-spoiler class="block__title">
+						#1 Spoiler works on screen width <= 800px
+					</button>
+					<div class="block__text">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse harum
+						eum, blanditiis voluptatem iure similique corrupti ratione minima
+						provident aspernatur iusto culpa aperiam mollitia saepe possimus
+						aliquid ducimus sed temporibus!
+					</div>
+				</div>
+
+				<div class="block__item">
+					<button tabindex="-1" type="button" data-spoiler class="block__title">
+						#2 Spoiler works on screen width <= 800px
+					</button>
+					<div class="block__text">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse harum
+						eum, blanditiis voluptatem iure similique corrupti ratione minima
+						provident aspernatur iusto culpa aperiam mollitia saepe possimus
+						aliquid ducimus sed temporibus!
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>
